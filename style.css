@@ -51,7 +51,7 @@ main img {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .item {
@@ -79,6 +79,7 @@ header {
 
 header nav ul li {
   list-style-type: none;
+  display: inline;
 }
 
 header nav ul li a {
@@ -139,3 +140,22 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  .logo {
+    font-size: 28px;
+    text-align: left;
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header {
+    padding: 0px;
+  }
+
+}
