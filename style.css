@@ -158,4 +158,22 @@ footer p {
     padding: 0px;
   }
 
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #stay {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
 }
