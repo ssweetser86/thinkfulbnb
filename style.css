@@ -30,13 +30,6 @@ section {
   padding: 20px 0;
 }
 
-#stay {
-  border-top: 3px solid #ff385c;
-  border-left: 3px solid #000;
-  padding: 30px 0;
-  margin: 30px 0;
-}
-
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
@@ -67,6 +60,7 @@ main img {
 
 .item-double {
   flex: 2;
+  text-align: center;
 }
 
 /* -------  Navigation ------- */
@@ -100,6 +94,10 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+#stay {
+  padding: 0 20px;
+}
+
 form {
   border: 2px solid #ff385c;
   padding: 10px;
