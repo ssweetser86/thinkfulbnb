@@ -1,4 +1,9 @@
 /* -------  General Styles ------- */
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -22,24 +27,24 @@ p {
 }
 
 section {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 #stay {
   border-top: 3px solid #ff385c;
   border-left: 3px solid #000;
-  padding: 30px;
-  margin: 30px;
+  padding: 30px 0;
+  margin: 30px 0;
 }
 
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 #ideas {
-  margin: 40px;
+  margin: 40px 0;
 }
 
 main img {
@@ -52,11 +57,12 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 .item-double {
@@ -67,13 +73,13 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 64px;
   color: #fff;
 }
 
@@ -136,7 +142,7 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 /* -------  Media Query ------- */
@@ -151,7 +157,11 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item {
+    flex: 1;
   }
 
   header {
@@ -168,7 +178,7 @@ footer p {
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
+  } 
 
   #stay {
     border: 0;
